@@ -68,3 +68,7 @@ ci: clean check test
 	$(MAKE) clean
 	$(MAKE) check
 	$(MAKE) test
+
+
+count: build  ## count the source files
+	@ls -1 $(SRC_DIR)/*.txt | wc -l

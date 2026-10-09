@@ -68,3 +68,7 @@ ci: clean check test
 	$(MAKE) clean
 	$(MAKE) check
 	$(MAKE) test
+
+
+count: build  ## report how many words were built
+	@wc -w $(OUTPUTS) | tail -1

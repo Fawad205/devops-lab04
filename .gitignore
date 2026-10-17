@@ -1,6 +1,2 @@
 out/
 *.log
-
-# Editor temporary files
-*.swp
-*.swo
